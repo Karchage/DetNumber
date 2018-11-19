@@ -1,0 +1,17 @@
+#include <iostream>
+
+
+
+int main()
+{
+	double StartT = -5;
+	std::cout << "This program convertation degrees Celsius to degrees Fahrenheit and degrees Reaumur \n";
+	std::cout<<"T<C>\t"<<"T<F>\t"<<"T<R>\n\n";
+	for(;StartT<=5;StartT+=1.25)
+	{
+		double TFar = StartT*9/5+32;
+		double TReo = StartT*4/5;
+		std::cout << StartT<<"\t"<<TFar<<"\t"<<TReo<<"\n";
+	}
+	return 0;
+}
